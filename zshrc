@@ -66,11 +66,6 @@ alias :w="echo YOU FAIL"
 # alias misc="cd /Volumes/misc"
 # function cdf() { cd *$1*/ } # stolen from @topfunky
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-
 alias git=hub
 
 [[ -f ~/.localrc ]] && . ~/.localrc
