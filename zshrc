@@ -67,5 +67,6 @@ alias :w="echo YOU FAIL"
 # function cdf() { cd *$1*/ } # stolen from @topfunky
 
 alias git=hub
+alias be="bundle exec"
 
 [[ -f ~/.localrc ]] && . ~/.localrc
