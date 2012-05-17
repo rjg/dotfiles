@@ -2,7 +2,7 @@
 	name = Ryan Golden
 	email = ryan.john.golden@gmail.com
 [core]
-  editor = mvim -v
+  editor = vim
 [diff]
 [color]
 	ui = auto
