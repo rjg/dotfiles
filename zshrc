@@ -40,7 +40,8 @@ alias r=rails
 alias sr="screen -r"
 alias :q="echo YOU FAIL"
 alias :w="echo YOU FAIL"
-alias git=hub
 alias be="bundle exec"
+alias diff=colordiff
+eval "$(hub alias -s)"
 
 [[ -f ~/.localrc ]] && . ~/.localrc
