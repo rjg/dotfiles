@@ -14,8 +14,8 @@ compinit
 
 # Unbreak broken, non-colored terminal
 export TERM='xterm-color'
-alias ls='ls -G'
-alias ll='ls -lG'
+alias ls='ls -G --color=always'
+alias ll='ls -lG --color=always'
 alias duh='du -csh'
 export LSCOLORS="ExGxBxDxCxEgEdxbxgxcxd"
 export GREP_OPTIONS="--color"
