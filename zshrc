@@ -16,8 +16,6 @@ compinit
 export TERM='xterm-color'
 alias ls='ls -G --color=always'
 alias ll='ls -lG --color=always'
-alias duh='du -csh'
-export LSCOLORS="ExGxBxDxCxEgEdxbxgxcxd"
 export GREP_OPTIONS="--color"
 
 # Unbreak history
