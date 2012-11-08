@@ -310,7 +310,7 @@ imap <c-l> <space>=><space>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Remove vendored gems from command-t results
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set wildignore+=vendor/**
+set wildignore+=vendor/**,.git,tmp/**,doc/**,_site/**
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Tabularize command
@@ -328,3 +328,8 @@ function! s:align()
   endif
 endfunction
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Run Jasmine Headless Tests
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+:map ,r :wa \| !jasmine-headless-webkit -c -j jasmine.yml %<cr>
+" :map ,a :wa \| !jasmine-headless-webkit -c -j jasmine.yml <cr>
