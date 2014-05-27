@@ -329,7 +329,11 @@ function! s:align()
 endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Run Jasmine Headless Tests
+" Run Unit Tests
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-:map ,r :wa \| !jasmine-headless-webkit -c -j jasmine.yml %<cr>
-" :map ,a :wa \| !jasmine-headless-webkit -c -j jasmine.yml <cr>
+:map ,r :wa \| !bundle exec rspec spec/ <cr>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Run Cukes
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+:map ,c :wa \| !bundle exec cucumber -f progress <cr>
