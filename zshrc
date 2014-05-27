@@ -44,4 +44,6 @@ alias be="bundle exec"
 alias diff=colordiff
 eval "$(hub alias -s)"
 
+PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"
+
 [[ -f ~/.localrc ]] && . ~/.localrc
